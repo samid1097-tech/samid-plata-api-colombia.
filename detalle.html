@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle | Portal Colombia</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">🇨🇴 Portal Colombia</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Inicio</a>
+        <a href="turismo.html" class="nav__link">Guía turística</a>
+        <a href="platos.html" class="nav__link">Sabores de Colombia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a id="volver" href="index.html" class="volver">← Volver</a>
+
+    <div id="cargando" class="loader">
+      <span class="loader__spinner"></span>
+      <p>Cargando información...</p>
+    </div>
+
+    <div id="error" class="error" hidden></div>
+
+    <article id="detalle" class="detalle" hidden></article>
+  </main>
+
+  <footer class="footer">
+    <p>Datos: <a href="https://api-colombia.com/" target="_blank" rel="noopener">API Colombia</a> · Samid Andrés Plata</p>
+  </footer>
+
+  <script src="js/imagenes.js"></script>
+  <script src="js/detalle.js"></script>
+</body>
+</html>
