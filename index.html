@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Portal de Colombia</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="inicio">
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">🇨🇴 Portal Colombia</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link nav__link--active">Inicio</a>
+        <a href="turismo.html" class="nav__link">Guía turística</a>
+        <a href="platos.html" class="nav__link">Sabores de Colombia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="hero__title">Descubre Colombia</h1>
+      <p class="hero__text">
+        Un mini portal que consume la API pública
+        <a href="https://api-colombia.com/" target="_blank" rel="noopener">api-colombia.com</a>
+        para mostrar los lugares turísticos y los platos típicos del país.
+      </p>
+    </section>
+
+    <section class="container home-grid">
+      <a href="turismo.html" class="home-card">
+        <span class="home-card__icon">🏞️</span>
+        <h2 class="home-card__title">Guía turística</h2>
+        <p class="home-card__text">Los primeros 20 atractivos turísticos con su ciudad, departamento y descripción.</p>
+        <span class="home-card__cta">Ver lugares →</span>
+      </a>
+      <a href="platos.html" class="home-card">
+        <span class="home-card__icon">🍲</span>
+        <h2 class="home-card__title">Sabores de Colombia</h2>
+        <p class="home-card__text">Todos los platos típicos con su descripción, departamento, ingredientes e imagen.</p>
+        <span class="home-card__cta">Ver platos →</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Datos: <a href="https://api-colombia.com/" target="_blank" rel="noopener">API Colombia</a> · Samid Andrés Plata</p>
+  </footer>
+</body>
+</html>

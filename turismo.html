@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía turística de Colombia</title>
+  <!-- Leaflet: librería para el mapa interactivo -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">🇨🇴 Portal Colombia</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Inicio</a>
+        <a href="turismo.html" class="nav__link nav__link--active">Guía turística</a>
+        <a href="platos.html" class="nav__link">Sabores de Colombia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <h1 class="page-head__title">Guía turística de Colombia</h1>
+
+    </section>
+
+    <section id="seccion-mapa" class="mapa-seccion" hidden>
+      <p class="mapa-ayuda">📍 Pasa el mouse sobre un punto del mapa para ver el resumen de cada atracción.</p>
+      <div class="mapa-contenedor">
+        <div id="mapa" class="mapa"></div>
+        <div id="burbuja" class="burbuja" hidden></div>
+      </div>
+    </section>
+
+    <h2 id="titulo-lista" class="seccion-titulo" hidden>Todas las atracciones</h2>
+    <section id="lista-lugares" class="grid"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Datos: <a href="https://api-colombia.com/" target="_blank" rel="noopener">API Colombia</a> · Samid Andrés Plata</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/imagenes.js"></script>
+  <script src="js/turismo.js"></script>
+</body>
+</html>
