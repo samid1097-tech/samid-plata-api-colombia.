@@ -5,8 +5,6 @@
 const API_URL = "https://api-colombia.com/api/v1";
 
 const contenedor = document.getElementById("lista-platos");
-const cargando = document.getElementById("cargando");
-const cajaError = document.getElementById("error");
 
 const MAX_INGREDIENTES = 8; // para que las pastillas quepan en el reverso
 
@@ -92,10 +90,6 @@ async function cargarPlatos() {
 
   } catch (error) {
     console.error(error);
-    cajaError.textContent = `No se pudieron cargar los platos típicos. ${error.message}`;
-    cajaError.hidden = false;
-  } finally {
-    cargando.hidden = true;
   }
 }
 

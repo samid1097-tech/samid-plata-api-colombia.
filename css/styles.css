@@ -157,36 +157,6 @@ code {
   border-radius: 999px;
 }
 
-/* ===== Carga y error ===== */
-.loader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 3rem 0;
-  color: var(--texto-suave);
-}
-
-.loader__spinner {
-  width: 44px;
-  height: 44px;
-  border: 5px solid #d9dee6;
-  border-top-color: var(--azul);
-  border-radius: 50%;
-  animation: girar 0.9s linear infinite;
-}
-
-@keyframes girar { to { transform: rotate(360deg); } }
-
-.error {
-  background: #fdecee;
-  color: var(--rojo);
-  border-left: 5px solid var(--rojo);
-  padding: 1rem 1.25rem;
-  border-radius: 8px;
-  font-weight: 500;
-}
-
 [hidden] { display: none !important; }
 
 /* ===== Tarjetas ===== */

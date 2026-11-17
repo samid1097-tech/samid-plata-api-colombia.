@@ -7,8 +7,6 @@ const API_URL = "https://api-colombia.com/api/v1";
 const LIMITE = 20; // Extra: mostrar solo los primeros 20
 
 const contenedor = document.getElementById("lista-lugares");
-const cargando = document.getElementById("cargando");
-const cajaError = document.getElementById("error");
 
 const seccionMapa = document.getElementById("seccion-mapa");
 const tituloLista = document.getElementById("titulo-lista");
@@ -201,10 +199,6 @@ async function cargarLugares() {
     }
   } catch (error) {
     console.error(error);
-    cajaError.textContent = `No se pudieron cargar los lugares turísticos. ${error.message}`;
-    cajaError.hidden = false;
-  } finally {
-    cargando.hidden = true;
   }
 }
 

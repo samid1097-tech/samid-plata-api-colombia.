@@ -6,8 +6,6 @@
 const API_URL = "https://api-colombia.com/api/v1";
 
 const contenedor = document.getElementById("detalle");
-const cargando = document.getElementById("cargando");
-const cajaError = document.getElementById("error");
 const volver = document.getElementById("volver");
 
 // Leer los parámetros de la URL
@@ -153,10 +151,6 @@ async function cargarDetalle() {
     contenedor.hidden = false;
   } catch (error) {
     console.error(error);
-    cajaError.textContent = `No se pudo cargar la información. ${error.message}`;
-    cajaError.hidden = false;
-  } finally {
-    cargando.hidden = true;
   }
 }
 
